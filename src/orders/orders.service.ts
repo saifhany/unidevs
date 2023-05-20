@@ -52,7 +52,7 @@ export class DeliveryOrdersService {
      driverName: string,
   ): Promise<void> {
     console.log(latitude, longitude, driverName);
-    const MAX_DISTANCE_IN_METERS = 100000;
+    const MAX_DISTANCE_IN_METERS = 1000;
     const DISTANCE_IN_KM = 1;    
     const orders = await this.deliveryOrderModel
       .findOne({
